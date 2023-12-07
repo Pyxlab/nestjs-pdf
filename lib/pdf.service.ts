@@ -30,7 +30,7 @@ export class PDFService implements PDFInterface {
     constructor(
         @Inject(PDF_OPTIONS_TOKEN)
         private readonly moduleOptions: PDFModuleOptions,
-    ) {}
+    ) { }
 
     toFile(
         template: string,
@@ -87,7 +87,7 @@ export class PDFService implements PDFInterface {
     private create(html: string, options?: PDFOptions): CreateResult {
         return pdf.create(
             html,
-            merge(defaultCreateOptions, omit(options, 'locals')),
+            merge(defaultCreateOptions(), omit(options, 'locals')),
         );
     }
 
