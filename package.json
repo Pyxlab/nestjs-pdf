@@ -1,6 +1,6 @@
 {
   "name": "@pyxlab/nestjs-pdf",
-  "version": "4.0.4",
+  "version": "4.0.5",
   "description": "PDF generator for nestjs framework.",
   "main": "index.js",
   "types": "index.d.ts",
