@@ -2,20 +2,20 @@
 
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
-  <a href="" target="blank"><img src="https://raw.githubusercontent.com/mikestraczek/nestjs-pdf/master/pdf-icon.svg" width="120" alt="PDF Logo" /></a>
+  <a href="" target="blank"><img src="https://raw.githubusercontent.com/pyxlab/nestjs-pdf/master/pdf-icon.svg" width="120" alt="PDF Logo" /></a>
 </p>
 
 <p style='text-align:center;'>
 A simple PDF generator module for <a href="https://nestjs.com">nestjs</a> framework.
 </p>
-
+<!-- 
 <p align='center'>
-    <a href="https://www.npmjs.com/package/@mikestraczek/nestjs-pdf" target='_blank'><img alt="npm" src="https://img.shields.io/npm/dm/@mikestraczek/nestjs-pdf" alt="NPM Downloads"></a>
-    <a href="https://coveralls.io/github/mikestraczek/nestjs-pdf" target="_blank" rel="noopener noreferrer"><img alt="Coveralls github" src="https://img.shields.io/coveralls/github/mikestraczek/nestjs-pdf"></a>
-    <a href="https://npmjs.com/@mikestraczek/nestjs-pdf" target="_blank" rel="noopener noreferrer"><img alt="npm version" src="https://img.shields.io/npm/v/@mikestraczek/nestjs-pdf"></a>
-    <a href="https://npmjs.com/@mikestraczek/nestjs-pdf" target="_blank" rel="noopener noreferrer"><img alt="LICENCE" src="https://img.shields.io/npm/l/@mikestraczek/nestjs-pdf"></a>
-    <a href="https://circleci.com/gh/mikestraczek/nestjs-pdf" target="_blank" rel="noopener noreferrer"><img alt="CircleCI build" src="https://img.shields.io/circleci/build/gh/mikestraczek/nestjs-pdf/master"></a>
-</p>
+    <a href="https://www.npmjs.com/package/@pyxlab/nestjs-pdf" target='_blank'><img alt="npm" src="https://img.shields.io/npm/dm/@pyxlab/nestjs-pdf" alt="NPM Downloads"></a>
+    <a href="https://coveralls.io/github/Pyxlab/nestjs-pdf" target="_blank" rel="noopener noreferrer"><img alt="Coveralls github" src="https://img.shields.io/coveralls/github/Pyxlab/nestjs-pdf"></a>
+    <a href="https://npmjs.com/@pyxlab/nestjs-pdf" target="_blank" rel="noopener noreferrer"><img alt="npm version" src="https://img.shields.io/npm/v/@pyxlab/nestjs-pdf"></a>
+    <a href="https://npmjs.com/@pyxlab/nestjs-pdf" target="_blank" rel="noopener noreferrer"><img alt="LICENCE" src="https://img.shields.io/npm/l/@pyxlab/nestjs-pdf"></a>
+    <a href="https://circleci.com/gh/Pyxlab/nestjs-pdf" target="_blank" rel="noopener noreferrer"><img alt="CircleCI build" src="https://img.shields.io/circleci/build/gh/Pyxlab/nestjs-pdf/master"></a>
+</p> -->
 
 <p>Original by: https://github.com/toondaey/nestjs-pdf</p>
 
@@ -37,11 +37,11 @@ A simple PDF generator module for <a href="https://nestjs.com">nestjs</a> framew
 
 Installation is as simple as running:
 
-`npm install @mikestraczek/nestjs-pdf`
+`npm install @pyxlab/nestjs-pdf`
 
 or
 
-`yarn add @mikestraczek/nestjs-pdf`.
+`yarn add @pyxlab/nestjs-pdf`.
 
 ## Usage
 
@@ -53,7 +53,7 @@ A basic usage example:
 
 ```ts
 import { Module } from '@nestjs/common';
-import { PDFModule } from '@mikestraczek/nestjs-pdf';
+import { PDFModule } from '@pyxlab/nestjs-pdf';
 
 @Module({
     imports: [
@@ -77,10 +77,7 @@ Examples below:
 
 ```ts
 import { Module } from '@nestjs/common';
-import {
-    PDFModule,
-    PDFModuleOptions,
-} from '@mikestraczek/nestjs-pdf';
+import { PDFModule, PDFModuleOptions } from '@pyxlab/nestjs-pdf';
 
 @Module({
     imports: [
@@ -106,7 +103,7 @@ export class AppModule {}
 import {
     PDFModuleOptions,
     PDFOptionsFactory,
-} from '@mikestraczek/nestjs-pdf';
+} from '@pyxlab/nestjs-pdf';
 import { Injectable } from '@nestjs/common';
 
 @Injectable()
@@ -126,7 +123,7 @@ The `PdfConfigService` **SHOULD** implement the `PDFOptionsFactory`, **MUST** de
 
 ```ts
 import { Module } from '@nestjs/common';
-import { PDFModule } from '@mikestraczek/nestjs-pdf';
+import { PDFModule } from '@pyxlab/nestjs-pdf';
 import { PdfConfigService } from './pdf-config.service';
 
 @Module({
@@ -146,7 +143,7 @@ export class AppModule {}
 
 ```ts
 import { Injectable } from '@nestjs/common';
-import { PDFService } from '@mikestraczek/nestjs-pdf';
+import { PDFService } from '@pyxlab/nestjs-pdf';
 
 @Injectable()
 export class AppService {
@@ -229,7 +226,7 @@ After completing the configuration(s), you can go ahead and inject the `pdf` ser
 
 ```ts
 import { Injectable } from '@nestjs/common';
-import { PDFService } from '@mikestraczek/nestjs-pdf';
+import { PDFService } from '@pyxlab/nestjs-pdf';
 
 @Injectable()
 export class YourService {

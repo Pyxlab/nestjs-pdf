@@ -1,5 +1,5 @@
 {
-  "name": "@mikestraczek/nestjs-pdf",
+  "name": "@pyxlab/nestjs-pdf",
   "version": "4.0.4",
   "description": "PDF generator for nestjs framework.",
   "main": "index.js",
@@ -34,11 +34,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mikestraczek/nestjs-pdf.git"
+    "url": "git+https://github.com/Pyxlab/nestjs-pdf.git.git"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mikestraczek/nestjs-pdf/issues"
+    "url": "https://github.com/Pyxlab/nestjs-pdf.git/issues"
   },
   "husky": {
     "hooks": {
@@ -46,7 +46,7 @@
       "pre-commit": "lint-staged"
     }
   },
-  "homepage": "https://github.com/mikestraczek/nestjs-pdf#readme",
+  "homepage": "https://github.com/Pyxlab/nestjs-pdf.git#readme",
   "publishConfig": {
     "access": "public"
   },

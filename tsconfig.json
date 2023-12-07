@@ -9,12 +9,16 @@
     "emitDecoratorMetadata": true,
     "esModuleInterop": true,
     "experimentalDecorators": true,
-    "target": "es3",
+    "target": "es6",
     "sourceMap": true,
     "outDir": "./dist",
     "rootDir": "./lib",
     "skipLibCheck": true
   },
-  "include": ["lib/**/*.ts"],
-  "exclude": ["test"]
+  "include": [
+    "lib/**/*.ts"
+  ],
+  "exclude": [
+    "test"
+  ]
 }
