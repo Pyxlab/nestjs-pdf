@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
-  <a href="" target="blank"><img src="https://raw.githubusercontent.com/toondaey/nestjs-pdf/master/pdf-icon.svg" width="120" alt="PDF Logo" /></a>
+  <a href="" target="blank"><img src="https://raw.githubusercontent.com/mikestraczek/nestjs-pdf/master/pdf-icon.svg" width="120" alt="PDF Logo" /></a>
 </p>
 
 <p style='text-align:center;'>
@@ -10,12 +10,14 @@ A simple PDF generator module for <a href="https://nestjs.com">nestjs</a> framew
 </p>
 
 <p align='center'>
-    <a href="https://www.npmjs.com/package/@t00nday/nestjs-pdf" target='_blank'><img alt="npm" src="https://img.shields.io/npm/dm/@t00nday/nestjs-pdf" alt="NPM Downloads"></a>
-    <a href="https://coveralls.io/github/toondaey/nestjs-pdf" target="_blank" rel="noopener noreferrer"><img alt="Coveralls github" src="https://img.shields.io/coveralls/github/toondaey/nestjs-pdf"></a>
-    <a href="https://npmjs.com/@t00nday/nestjs-pdf" target="_blank" rel="noopener noreferrer"><img alt="npm version" src="https://img.shields.io/npm/v/@t00nday/nestjs-pdf"></a>
-    <a href="https://npmjs.com/@t00nday/nestjs-pdf" target="_blank" rel="noopener noreferrer"><img alt="LICENCE" src="https://img.shields.io/npm/l/@t00nday/nestjs-pdf"></a>
-    <a href="https://circleci.com/gh/toondaey/nestjs-pdf" target="_blank" rel="noopener noreferrer"><img alt="CircleCI build" src="https://img.shields.io/circleci/build/gh/toondaey/nestjs-pdf/master"></a>
+    <a href="https://www.npmjs.com/package/@mikestraczek/nestjs-pdf" target='_blank'><img alt="npm" src="https://img.shields.io/npm/dm/@mikestraczek/nestjs-pdf" alt="NPM Downloads"></a>
+    <a href="https://coveralls.io/github/mikestraczek/nestjs-pdf" target="_blank" rel="noopener noreferrer"><img alt="Coveralls github" src="https://img.shields.io/coveralls/github/mikestraczek/nestjs-pdf"></a>
+    <a href="https://npmjs.com/@mikestraczek/nestjs-pdf" target="_blank" rel="noopener noreferrer"><img alt="npm version" src="https://img.shields.io/npm/v/@mikestraczek/nestjs-pdf"></a>
+    <a href="https://npmjs.com/@mikestraczek/nestjs-pdf" target="_blank" rel="noopener noreferrer"><img alt="LICENCE" src="https://img.shields.io/npm/l/@mikestraczek/nestjs-pdf"></a>
+    <a href="https://circleci.com/gh/mikestraczek/nestjs-pdf" target="_blank" rel="noopener noreferrer"><img alt="CircleCI build" src="https://img.shields.io/circleci/build/gh/mikestraczek/nestjs-pdf/master"></a>
 </p>
+
+<p>Original by: https://github.com/toondaey/nestjs-pdf</p>
 
 <details>
 <summary><strong>Table of content</strong> (click to expand)</summary>
@@ -35,11 +37,11 @@ A simple PDF generator module for <a href="https://nestjs.com">nestjs</a> framew
 
 Installation is as simple as running:
 
-`npm install @t00nday/nestjs-pdf`
+`npm install @mikestraczek/nestjs-pdf`
 
 or
 
-`yarn add @t00nday/nestjs-pdf`.
+`yarn add @mikestraczek/nestjs-pdf`.
 
 ## Usage
 
@@ -51,7 +53,7 @@ A basic usage example:
 
 ```ts
 import { Module } from '@nestjs/common';
-import { PDFModule } from '@t00nday/nestjs-pdf';
+import { PDFModule } from '@mikestraczek/nestjs-pdf';
 
 @Module({
     imports: [
@@ -75,7 +77,10 @@ Examples below:
 
 ```ts
 import { Module } from '@nestjs/common';
-import { PDFModule, PDFModuleOptions } from '@t00nday/nestjs-pdf';
+import {
+    PDFModule,
+    PDFModuleOptions,
+} from '@mikestraczek/nestjs-pdf';
 
 @Module({
     imports: [
@@ -101,7 +106,7 @@ export class AppModule {}
 import {
     PDFModuleOptions,
     PDFOptionsFactory,
-} from '@t00nday/nestjs-pdf';
+} from '@mikestraczek/nestjs-pdf';
 import { Injectable } from '@nestjs/common';
 
 @Injectable()
@@ -121,7 +126,7 @@ The `PdfConfigService` **SHOULD** implement the `PDFOptionsFactory`, **MUST** de
 
 ```ts
 import { Module } from '@nestjs/common';
-import { PDFModule } from '@t00nday/nestjs-pdf';
+import { PDFModule } from '@mikestraczek/nestjs-pdf';
 import { PdfConfigService } from './pdf-config.service';
 
 @Module({
@@ -141,7 +146,7 @@ export class AppModule {}
 
 ```ts
 import { Injectable } from '@nestjs/common';
-import { PDFService } from '@t00nday/nestjs-pdf';
+import { PDFService } from '@mikestraczek/nestjs-pdf';
 
 @Injectable()
 export class AppService {
@@ -224,7 +229,7 @@ After completing the configuration(s), you can go ahead and inject the `pdf` ser
 
 ```ts
 import { Injectable } from '@nestjs/common';
-import { PDFService } from '@t00nday/nestjs-pdf';
+import { PDFService } from '@mikestraczek/nestjs-pdf';
 
 @Injectable()
 export class YourService {
